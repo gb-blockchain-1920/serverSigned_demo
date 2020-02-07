@@ -113,7 +113,7 @@ router.get("/", async function(req, res, next) {
     // to: '0x0000000000000000000000000000000000000000',
     value: "0x00",
     data: TestContract.methods
-      .setStock(web3.utils.toHex("GOOG"), 1000, 100)
+      .setStock(web3.utils.toHex("GOOG"), 2000, 10)
       .encodeABI()
   };
   console.log("Hex: "+web3.utils.toHex("GOOG"));
